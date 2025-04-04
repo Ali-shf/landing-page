@@ -1,0 +1,105 @@
+:root {
+    /* colors */
+    /* light-mode */
+    /* !light-mode-color */
+    --light-mode-primary: #2C7EF8;
+    --light-mode-primary-hover-light: #075CD9;
+    --light-mode-on-primary-light: #EBEDEF;
+    /* !light-mode-background-color */
+    --light-mode-background-light: #EBEDEF;
+    --light-mode-on-background-light: #191C1E;
+    --light-mode-surface-light: #EBEDEF;
+    /* !light-mode-Neutral-color */
+    --light-mode-black: #000000;
+    --light-mode-almost-black: #323233;
+    --light-mode-charcoal: #646466;
+    --light-mode-deep-gray: #7D7D7F;
+    --light-mode-dark-gray: #AFAEB2;
+    --light-mode-medium-gray: #C8C7CB;
+    --light-mode-gray: #E1E0E5;
+    --light-mode-soft-gray: #F5F6F8;
+    --light-mode-light-gray: #FEFEFE;
+    --light-mode-white: #FFFFFF;
+    /* !light-mode-Error-success */
+    --light-mode-error: #E63946;
+    --light-mode-success: #90F677;
+    /* dark-mode */
+    /* !light-mode-color */
+    --primary: #3A86F8;
+    --primary-hover-dark: #6BA4FA;
+    --on-primary-light: #EBEDEF;
+    /* !light-mode-background-color */
+    --background-dark: #040810;
+    --on-background-dark: #E6E9EF;
+    --surface-dark: #E6E9EF;
+    /* !light-mode-Neutral-color */
+    --dark-mode-white: #fff;
+    --dark-mode-darkest-gray: #323233;
+    --dark-mode-darker-gray: #646466;
+    --dark-mode-dark: #7D7D7F;
+    --dark-mode-medium-dark-gray: #AFAEB2;
+    --dark-mode-medium-gray: #C8C7CB;
+    --dark-mode-light-gray: #E1E0E5;
+    --dark-mode-soft-gray: #F5F6F8;
+    --dark-mode-lightest-gray: #FEFEFE;
+    /* !light-mode-Error-success */
+    --dark-mode-error: #E63946;
+    --dark-mode-success: #90F677;
+    /* !navbar */
+    --quera-list: #141414;
+    --gray-600: #666666;
+}
+
+
+@font-face {
+    font-family: "yekan";
+    src: url("../assets/fonts/BYekan/BYekan+.ttf");
+}
+
+* {
+    /* padding: 0;
+    margin: 0; */
+    outline: 0;
+    font-family: "yekan";
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+
+.navbar-container {
+    font-weight: 600;
+}
+
+#blue-link {
+    color: var(--light-mode-primary);
+}
+
+#quera-list {
+    color: var(--quera-list);
+}
+
+#gray-600 {
+    color: var(--gray-600);
+}
+
+.navbar-action button {
+    background-color: var(--light-mode-primary);
+}
+
+.navbar-action div {
+    border: 1px solid #E3E3E3;
+}
+
+/* header */
+
+#header-footer :first-child {
+    background-color: var(--light-mode-primary);
+    color: #fff;
+}
+
+
+#header-footer :last-child {
+    color: var(--light-mode-primary);
+    background-color: var(--on-primary-light);
+}
