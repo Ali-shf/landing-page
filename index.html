@@ -8,7 +8,7 @@
     <title>Landing-page</title>
 </head>
 <body>
-    <div class="landing-page">
+    <div class="landing-page h-screen">
         <nav class="navbar-container bg- w-full h-[84px] flex justify-between items-center px-26">
             <ul class="navbar-list flex gap-8">
                 <li class="px-4"><a id="quera-list" class="text-[20px]" href="https://www.quera.org">کوئرا لیست</a></li>
@@ -56,6 +56,83 @@
                 <button class="px-6 py-2 border-none cursor-pointer w-[167px] h-[40px] rounded-lg whitespace-nowrap">درباره ما</button>
             </div>
         </header>
+        <main id="main-content" class="h-full">
+            <section id="main-picture" class="flex justify-center">
+                <img 
+                    src="./assets/images/penoo.svg" 
+                    alt="penoo" 
+                />
+            </section>
+            <section id="quera-features" class="relative h-[450px] flex flex-col items-center gap-4 mt-[124px]">
+                <img 
+                    src="./assets/images/half_circle.png" 
+                    alt="faded_elipse" 
+                    class="absolute right-0"
+                    />
+                <div id="features-desc" class="h-[144px]">
+                    <h3 class="font-semibold text-[40px] mb-3">ویژگی‌های اپلیکیشن کوئرالیست</h3>
+                    <p class="text-lg max-w-[30rem] text-center mt-3">ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم.</p>
+                </div>
+                <div id="features-cards" class="grid h-[226px] gap-6 mt-6">
+                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
+                        <header class="card-header">
+                            <img 
+                                src="./assets/images/pen.svg" 
+                                alt="pen"
+                            />
+                        </header>
+                        <div class="card-title">
+                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                        </div>
+                    </div>
+                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
+                        <header class="card-header">
+                            <img 
+                                src="./assets/images/dashboard.svg" 
+                                alt="pen"
+                            />
+                        </header>
+                        <div class="card-title">
+                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                        </div>
+                    </div>
+                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
+                        <header class="card-header">
+                            <img 
+                                src="./assets/images/saved place.svg" 
+                                alt="pen"
+                            />
+                        </header>
+                        <div class="card-title">
+                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                        </div>
+                    </div>
+                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
+                        <header class="card-header">
+                            <img 
+                                src="./assets/images/profile.svg" 
+                                alt="pen"
+                            />
+                        </header>
+                        <div class="card-title">
+                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
+                        </div>
+                        <div class="card-content">
+                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     <script src="./src/index.js"></script>
 </body>
