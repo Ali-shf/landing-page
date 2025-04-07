@@ -48,6 +48,11 @@
     /* !navbar */
     --quera-list: #141414;
     --gray-600: #666666;
+    /* !header */
+    --linear-gradient-from: #EBF3FF;
+    --linear-gradient-to: #FFFFFF;
+    /* !p */
+    --gray-p: #444749;
 }
 
 
@@ -102,4 +107,72 @@
 #header-footer :last-child {
     color: var(--light-mode-primary);
     background-color: var(--on-primary-light);
+}
+
+#header {
+    background: linear-gradient(to bottom, var(--linear-gradient-from), var(--linear-gradient-to));
+}
+
+/* main */
+
+#features-cards {
+    grid-template-columns: repeat(4, 262px);
+}
+
+#features-desc p {
+    color: var(--gray-p);
+}
+
+#features-cards .card-content p {
+    color: var(--gray-p);
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#features-cards .card {
+    border: 1px solid #F5F6F8;
+    box-shadow: 0 4px 63px 0 rgba(0, 0, 0, 0.03);
+}
+
+#aside .right-aside {
+    line-height: 30px;
+}
+
+#aside .right-aside p {
+    font-size: 18px;
+    color: var(--gray-p);
+}
+
+#aside .right-footer a {
+    color: var(--light-mode-primary);
+}
+
+/* commit */
+
+#comment p {
+    color: var(--gray-p);
+}
+
+#comment .comment-header p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#comment .comment-card {
+    box-shadow: 0 4px 63px 0 rgba(0, 0, 0, 0.04);
+}
+
+#comment .comment-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+#comment .comment-content .comment-card address h5 {
+    line-height: 100%;
+    font-size: 15px;
+}
+
+#comment .comment-info {
+    line-height: 100%;
 }
