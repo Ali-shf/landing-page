@@ -9,288 +9,321 @@
 </head>
 <body>
     <div class="landing-page h-screen">
-        <nav class="navbar-container bg- w-full h-[10%] flex justify-between items-center px-26">
-            <ul class="navbar-list flex gap-8">
-                <li class="px-4"><a id="quera-list" class="text-[20px]" href="https://www.quera.org">کوئرا لیست</a></li>
-                <li class="px-4"><a id="blue-link" href="./index.html">صفحه اصلی</a></li>
-                <li class="px-4"><a id="gray-600" href="./contact-us.html">ارتباط با ما</a></li>
-                <li class="px-4"><a id="gray-600" href="./about-us.html">درباره ما</a></li>
-            </ul> 
-            <div class="navbar-action flex gap-4">
-                <button class="px-6 py-2 border-none cursor-pointer w-[167px] h-[40px] rounded-lg text-white whitespace-nowrap">ورود به اپلیکیشن</button>
-                <div class="w-10 h-10 flex justify-center items-center rounded-md">
-                    <img class="w-6 h-6 cursor-pointer object-cover" src="./assets/images/dark-mode.png" alt="dark-mode" />
+        <!-- !header -->
+        <nav id="navbar" class="flex w-screen px-[104px] py-6 items-center justify-between">
+            <div class="right-nav flex items-baseline gap-x-[72px]">
+                <h5>کوئرا لیست</h5>
+                <ul class="flex items-center gap-x-[72px]">
+                    <li><a href="./index.html">صفحه اصلی</a></li>
+                    <li><a href="./www.quera.org">درباره ما</a></li>
+                    <li><a href="./contact-us.html">ارتباط با ما</a></li>
+                </ul>
+            </div>
+            <div class="left-nav flex items-center gap-4">
+                <button>ورود به اپلیکیشن</button>
+                <div class="dark-mode rounded-md h-10 w-10 flex items-center justify-center">
+                    <img 
+                        src="./assets/images/dark-mode.png" 
+                        alt="dark-mode"
+                    />
                 </div>
             </div>
         </nav>
-        <header id="header" class="h-[65%] flex flex-col items-center justify-around py-4 relative">
-            <img 
-                src="./assets/images/star.png" 
-                alt="star" 
-                class="absolute right-[332px] top-[60px]"
-            />
-            <img 
-                src="./assets/images/star.png" 
-                alt="star" 
-                class="absolute top-[335px] left-[192px]"
-            />
-            <img 
-                src="./assets/images/Ellipse.png" 
-                alt="elipse"
-                class="absolute top-[60px] left-[36px]"
-            />
-            <img 
-                src="./assets/images/almost_elipse.png" 
-                alt="almost_elipse"
-                class="absolute top-[224px] right-0"
-            />
-            <img 
-                src="./assets/images/vector.png" 
-                alt="vector" 
-                    
-            />
-            <div id="header-titles" class="text-center absolute top-[113.5px]">
-                <h2 class="font-normal text-[46px]">تمرکز رو وارد زندگیت کن</h2>
+        <!-- -------------------------------------- -->
+        <!-- !navbar -->
+        <header id="header" class="w-screen relative flex flex-col justify-around items-center ">
+            <div class="header-title mt-[113px] flex flex-col items-center">
+                <h2 class="text-[46px]">تمرکز رو وارد زندگیت کن</h2>
                 <h1 class="font-black text-[64px]">به سمت اهدافت اوج بگیر</h1>
+                <img 
+                    src="./assets/images/vector.svg" 
+                    alt="vector" 
+                    class="pt-6"
+                />
             </div>
-            <div id="header-content" class="absolute bottom-[160px] max-w-3xl text-center">
-                <p class="text-xl/10">زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."</p>
+            <div class="header-content text-center">
+                <p class="text-[20px] max-w-3xl">
+                    زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."
+                </p>
             </div>
-            <div id="header-footer" class="flex justify-center items-center gap-3 w-full font-semibold absolute bottom-[80px]">
-                <button class="px-6 py-2 border-none cursor-pointer w-[167px] h-[40px] rounded-lg text-white whitespace-nowrap">ورود به اپلیکیشن</button>
-                <button class="px-6 py-2 border-none cursor-pointer w-[167px] h-[40px] rounded-lg whitespace-nowrap">درباره ما</button>
+            <div class="header-btn flex gap-x-4">
+                <button class="right-btn">ورود به اپلیکیشن</button>
+                <button class="left-btn">درباره ما</button>
+            </div>
+            <div class="header-shapes">
+                <img 
+                    src="./assets/images/Ellipse.png" 
+                    alt="circle" 
+                    class="absolute top-[60px] left-[36px]"    
+                />
+                <img 
+                    src="./assets/images/Ellipse 129.svg" 
+                    alt="circle" 
+                    class="absolute -right-[36px] top-[224px]"    
+                />
+                <img 
+                    src="./assets/images/star.png" 
+                    alt="star" 
+                    class="absolute top-[335px] left-[192px]"    
+                />
+                <img 
+                    src="./assets/images/star.png" 
+                    alt="star" 
+                    class="absolute top-[60px] right-[332px]"    
+                />
             </div>
         </header>
-        <main id="main-content" class="h-[95%]">
-            <section id="main-picture" class="flex justify-center">
+        <!-- -------------------------------------- -->
+        <!-- !main-content -->
+        <main id="main" class="grid grid-cols-1 gap-y-[124px] px-[160px]">
+            <div class="main-picture !mx-auto">
                 <img 
                     src="./assets/images/penoo.svg" 
-                    alt="penoo" 
-                />
-            </section>
-            <section id="quera-features" class="relative h-[70%] flex flex-col items-center gap-4 mt-[124px]">
-                <img 
-                    src="./assets/images/half_circle.png" 
-                    alt="faded_elipse" 
-                    class="absolute right-0"
-                    />
-                <img 
-                    src="./assets/images/faded_elipse.png" 
-                    alt="faded_elipse" 
-                    class="absolute left-0"
-                    />
-                <div id="features-desc" class="h-[144px]">
-                    <h3 class="font-semibold text-[40px] mb-3">ویژگی‌های اپلیکیشن کوئرالیست</h3>
-                    <p class="text-lg max-w-[30rem] text-center mt-3">ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم.</p>
+                    alt="penoo">
+            </div>
+            <div class="features h-[450px] flex flex-col items-center gap-10">
+                <div class="features-title">
+                    <h2>ویژگی‌های اپلیکیشن کوئرالیست</h2>
+                    <p class="max-w-[30rem]  mt-3">
+                        ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم.
+                    </p>
                 </div>
-                <div id="features-cards" class="grid h-[226px] gap-6 mt-6">
-                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
-                        <header class="card-header">
-                            <img 
-                                src="./assets/images/pen.svg" 
-                                alt="pen"
-                            />
-                        </header>
-                        <div class="card-title">
-                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
-                        </div>
-                        <div class="card-content">
-                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
-                        </div>
+                <div class="features-items h-[262px] grid gap-6">
+                    <div class="item px-12 flex flex-col justify-evenly items-center">
+                        <img 
+                            src="./assets/images/pen.svg" 
+                            alt="pen"
+                            class="object-conver"
+                        />
+                        <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
+                        <p>
+                            اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+                        </p>
                     </div>
-                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
-                        <header class="card-header">
-                            <img 
-                                src="./assets/images/dashboard.svg" 
-                                alt="pen"
-                            />
-                        </header>
-                        <div class="card-title">
-                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
-                        </div>
-                        <div class="card-content">
-                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
-                        </div>
+                    <div class="item px-12 flex flex-col justify-evenly items-center">
+                        <img 
+                            src="./assets/images/dashboard.svg" 
+                            alt="dashboard"
+                            class="object-conver"
+                        />
+                        <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
+                        <p>
+                            اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+                        </p>
                     </div>
-                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
-                        <header class="card-header">
-                            <img 
-                                src="./assets/images/saved place.svg" 
-                                alt="pen"
-                            />
-                        </header>
-                        <div class="card-title">
-                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
-                        </div>
-                        <div class="card-content">
-                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
-                        </div>
+                    <div class="item px-12 flex flex-col justify-evenly items-center">
+                        <img 
+                            src="./assets/images/saved place.svg" 
+                            alt="save"
+                            class="object-conver"
+                        />
+                        <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
+                        <p>
+                            اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+                        </p>
                     </div>
-                    <div class="card h-[266px] flex flex-col items-center justify-evenly rounded-3xl">
-                        <header class="card-header">
-                            <img 
-                                src="./assets/images/profile.svg" 
-                                alt="pen"
-                            />
-                        </header>
-                        <div class="card-title">
-                            <h4 class="text-[20px] relative bottom-2 font-bold">رابط کاربری جذاب</h4>
-                        </div>
-                        <div class="card-content">
-                            <p class="text-[14px] relative bottom-3 text-center w-40">اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!</p>
-                        </div>
+                    <div class="item px-12 flex flex-col justify-evenly items-center">
+                        <img 
+                            src="./assets/images/profile.svg" 
+                            alt="profile"
+                            class="object-conver"
+                        />
+                        <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
+                        <p>
+                            اگه از سردرگمی و بی برنامگی خسته شدی این اپلیکیشن مخصوص خودته!
+                        </p>
                     </div>
                 </div>
-            </section>
-            <aside id="aside" class="w-full h-[60%]">
-                <div class="aside-container flex items-center justify-evenly px-20">
-                    <div class="right-aside">
-                        <header class="right-header">
-                            <p class="mb-3">اپلیکیشن اندروید و IOS</p>
-                            <h3 class="text-[40px] font-bold">دانلود اپلیکیشن</h3>
-                        </header>
-                        <div class="right-content mt-7">
-                            <p class="max-w-[39.5rem]">
-                                کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-                            </p>
-                            <p class="max-w-md">
-                                همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-                            </p>
-                        </div>
-                        <footer class="right-footer py-10 px-4 text-[18px] font-bold flex gap-4">
-                            <a href="#">ورود به اپلیکیشن</a>
-                            <img 
-                                src="./assets/images/arrow-right.png" 
-                                alt="right-arrow" />  
-                        </footer>
+            </div>
+            <div class="download flex justify-center gap-[42px]">
+                <div class="right-side w-[540px] flex flex-col gap-4">
+                    <div class="right-title">
+                        <p>اپلیکیشن اندروید و IOS</p>
+                        <h2>دانلود اپلیکیشن</h2>
                     </div>
-                    <div class="left-aside">
-                        <img src="./assets/images/group.svg" alt="group" />
+                    <div class="right-content">
+                        <p class="max-w-[26rem]">
+                            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+                        </p>
+                        <p class="max-w-md">
+                            همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+                        </p>
+                    </div>
+                    <div class="right-footer flex pt-10 gap-[10px]">
+                        <a href="#">ورود به اپلیکیشن</a>
+                        <img src="./assets/images/arrow-right.png" alt="arrow">
                     </div>
                 </div>
-            </aside>
-            <section id="comment" class="h-[60%] flex flex-col items-center gap-10">
-                <header class="comment-header flex text-center flex-col items-center gap-4">
-                    <h3>نظرات کاربران</h3>
-                    <p class="max-w-md">بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.</p>
-                </header>
-                <div class="comment-body grid grid-cols-3 gap-6">
-                    <div class="comment-card rounded-2xl p-8 flex flex-col gap-6">
-                        <div class="comment-title flex gap-4">
-                            <img 
-                                src="./assets/images/person1.svg" 
-                                alt="first_person"
-                            />
-                            <div class="py-1">
-                                <h4>رویا ملکی</h4>
-                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                <div class="left-side">
+                    <img src="./assets/images/group.svg" alt="group">
+                </div>
+            </div>
+            <section class="comment-container flex flex-col items-center gap-y-12">
+                <div class="comment-header text-center">
+                    <h2>نظرات کاربران</h2>
+                    <p class="max-w-md pt-4">
+                    بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.
+                    </p>
+                </div>
+                <div class="comment-cards flex gap-x-6">
+                    <div class="right-cards flex flex-col gap-y-6">
+                        <div class="card flex flex-col gap-y-6">
+                            <div class="card-title flex gap-4">
+                                <img src="./assets/images/person1.svg" alt="person" />
+                                <div class="card-title-desc pt-2">
+                                    <h3 class="font-bold text-[15px]">رویا ملکی</h3>
+                                    <p class="pt-1">مهندس نرم افزار دیجی‌کالا</p>
+                                </div>
+                            </div>
+                            <div class="card-content text-[16px] font-light max-w-3xl">
+                                <p class="max-w-[14rem]">
+                                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
+                                </p>
                             </div>
                         </div>
-                        <div class="comment-desc">
-                            <p class="max-w-[16rem] text-[16px] font-light">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
-                            </p>
+                        <div class="card flex flex-col gap-y-6">
+                            <div class="card-title flex gap-4">
+                                <img src="./assets/images/person4.svg" alt="person" />
+                                <div class="card-title-desc pt-2">
+                                    <h3 class="font-bold text-[15px]">رویا ملکی</h3>
+                                    <p class="pt-1">مهندس نرم افزار دیجی‌کالا</p>
+                                </div>
+                            </div>
+                            <div class="card-content text-[16px] font-light max-w-3xl">
+                                <p class="max-w-[15rem]">
+                                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="comment-card h-[240px] rounded-2xl p-8 flex flex-col gap-6">
-                        <div class="comment-title flex gap-4">
-                            <img 
-                                src="./assets/images/person2.svg" 
-                                alt="second_person"
-                            />
-                            <div class="py-1">
-                                <h4>رویا ملکی</h4>
-                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                    <div class="middle-cards flex flex-col gap-y-6">
+                        <div class="card flex flex-col gap-y-6">
+                            <div class="card-title flex gap-4">
+                                <img src="./assets/images/person2.svg" alt="person" />
+                                <div class="card-title-desc pt-2">
+                                    <h3 class="font-bold text-[15px]">رویا ملکی</h3>
+                                    <p class="pt-1">مهندس نرم افزار دیجی‌کالا</p>
+                                </div>
+                            </div>
+                            <div class="card-content text-[16px] font-light max-w-3xl">
+                                <p class="max-w-[15rem]">
+                                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
+                                </p>
                             </div>
                         </div>
-                        <div class="comment-desc">
-                            <p class="max-w-[16rem] text-[16px] font-light">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم                            
-                            </p>
+                        <div class="card flex flex-col gap-y-6">
+                            <div class="card-title flex gap-4">
+                                <img src="./assets/images/person5.svg" alt="person" />
+                                <div class="card-title-desc pt-2">
+                                    <h3 class="font-bold text-[15px]">رویا ملکی</h3>
+                                    <p class="pt-1">مهندس نرم افزار دیجی‌کالا</p>
+                                </div>
+                            </div>
+                            <div class="card-content text-[16px] font-light max-w-3xl">
+                                <p class="max-w-[14rem]">
+                                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="comment-card rounded-2xl p-8 flex flex-col gap-6">
-                        <div class="comment-title flex gap-4">
-                            <img 
-                                src="./assets/images/person3.svg" 
-                                alt="third_person"
-                            />
-                            <div class="py-1">
-                                <h4>رویا ملکی</h4>
-                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                    <div class="left-cards flex flex-col gap-y-6" >
+                        <div class="card flex flex-col gap-y-6">
+                            <div class="card-title flex gap-4">
+                                <img src="./assets/images/person3.svg" alt="person" />
+                                <div class="card-title-desc pt-2">
+                                    <h3 class="font-bold text-[15px]">رویا ملکی</h3>
+                                    <p class="pt-1">مهندس نرم افزار دیجی‌کالا</p>
+                                </div>
+                            </div>
+                            <div class="card-content text-[16px] font-light max-w-3xl">
+                                <p class="max-w-[14rem]">
+                                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
+                                </p>
                             </div>
                         </div>
-                        <div class="comment-desc">
-                            <p class="max-w-[16rem] text-[16px] font-light">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="comment-card h-[240px] rounded-2xl p-8 flex flex-col gap-6">
-                        <div class="comment-title flex gap-4">
-                            <img 
-                                src="./assets/images/person4.svg" 
-                                alt="4th_person"
-                            />
-                            <div class="py-1">
-                                <h4>رویا ملکی</h4>
-                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                        <div class="card flex flex-col gap-y-6">
+                            <div class="card-title flex gap-4">
+                                <img src="./assets/images/person6.svg" alt="person" />
+                                <div class="card-title-desc pt-2">
+                                    <h3 class="font-bold text-[15px]">رویا ملکی</h3>
+                                    <p class="pt-1">مهندس نرم افزار دیجی‌کالا</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="comment-desc">
-                            <p class="max-w-[16rem] text-[16px] font-light">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم                            
-                            </p>
-                        </div>
-                    </div>
-                    <div class="comment-card rounded-2xl p-8 flex flex-col gap-6">
-                        <div class="comment-title flex gap-4">
-                            <img 
-                                src="./assets/images/person5.svg" 
-                                alt="5th_person"
-                            />
-                            <div class="py-1">
-                                <h4>رویا ملکی</h4>
-                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                            <div class="card-content text-[16px] font-light max-w-3xl">
+                                <p class="max-w-[16rem]">
+                                    تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
+                                </p>
                             </div>
-                        </div>
-                        <div class="comment-desc">
-                            <p class="max-w-[16rem] text-[16px] font-light">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.                          
-                            </p>
-                        </div>
-                    </div>
-                    <div class="comment-card h-[240px] rounded-2xl p-8 flex flex-col gap-6">
-                        <div class="comment-title flex gap-4">
-                            <img 
-                                src="./assets/images/person6.svg" 
-                                alt="6th_person"
-                            />
-                            <div class="py-1">
-                                <h4>رویا ملکی</h4>
-                                <p>مهندس نرم افزار دیجی‌کالا</p>
-                            </div>
-                        </div>
-                        <div class="comment-desc">
-                            <p class="max-w-[16rem] text-[16px] font-light">
-                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
-                            </p>
                         </div>
                     </div>
                 </div>
-                <footer class="comment-footer flex gap-6">
-                    <div class="right-slider w-[40px] h-[40px] p-[10px]">
-                        <img src="./assets/images/right-slider.svg" alt="right-slider">
+                <div class="comment-footer flex gap-x-6">
+                    <div class="right-slider">
+                        <img 
+                            src="./assets/images/right-slider.svg" 
+                            alt="right-slider" 
+                        />
                     </div>
-                    <div class="left-slider w-[40px] h-[40px] p-[10px]">
-                        <img src="./assets/images/left-slider.svg" alt="left-slider">
+                    <div class="left-slider">
+                        <img 
+                            src="./assets/images/left-slider.svg" 
+                            alt="left-slider" 
+                        />
                     </div>
-                </footer>
+                </div>
             </section>
         </main>
-        <footer class="h-[20%]">
-            
+        <!-- -------------------------------------- -->
+        <!-- !footer -->
+        <footer id="footer" class="mt-[120px]">
+            <div class="footer-header flex justify-center items-center gap-x-4">
+                <img 
+                    src="./assets/images/line.svg" 
+                    alt="line"     
+                />
+                <h3 class="font-semibold text-[20px]">کوئرا لیست</h3>
+                <img 
+                    src="./assets/images/line.svg" 
+                    alt="line"     
+                />
+            </div>
+            <div class="footer-body pt-12 flex justify-between px-[160px]">
+                <div class="right-footer-body">
+                    <address class="FAQ flex gap-x-4">
+                        <img src="./assets/images/bag.svg" alt="bag" />
+                        <p>فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                    </address>
+                    <address class="call py-4 flex gap-x-4">
+                        <img src="./assets/images/call.svg" alt="call" />
+                        <p>تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                    </address>
+                    <address class="location flex items-start gap-x-4">
+                        <img src="./assets/images/location.svg" alt="location" />
+                        <p class="max-w-[15rem]">
+                            آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
+                        </p>
+                    </address>
+                </div>
+                <div class="left-body-footer">
+                    <div class="left-body-title text-[16px]">
+                        <h4 class="font-bold">با ما در ارتباط باش</h4>
+                        <p class="max-w-[18rem] pt-[12px]">اگه میخوای اولین نفری باشی که از فیچرهای جدید 
+                            و تخفیفات با خبر بشی.
+                        </p>
+                    </div>
+                    <div class="left-body-email mt-[32px] flex justify-between items-center">
+                        <span>ایمیل</span>
+                        <button>ارسال</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end pt-[64px] text-center">
+                <p>
+                    تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+                </p>
+            </div>
         </footer>
+        <!-- -------------------------------------- -->
     </div>
     <script src="./src/index.js"></script>
 </body>
