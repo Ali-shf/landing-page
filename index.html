@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="landing-page h-screen">
-        <nav class="navbar-container bg- w-full h-[84px] flex justify-between items-center px-26">
+        <nav class="navbar-container bg- w-full h-[10%] flex justify-between items-center px-26">
             <ul class="navbar-list flex gap-8">
                 <li class="px-4"><a id="quera-list" class="text-[20px]" href="https://www.quera.org">کوئرا لیست</a></li>
                 <li class="px-4"><a id="blue-link" href="./index.html">صفحه اصلی</a></li>
@@ -23,7 +23,7 @@
                 </div>
             </div>
         </nav>
-        <header id="header" class="h-[600px] flex flex-col items-center justify-around py-4 relative">
+        <header id="header" class="h-[65%] flex flex-col items-center justify-around py-4 relative">
             <img 
                 src="./assets/images/star.png" 
                 alt="star" 
@@ -44,6 +44,11 @@
                 alt="almost_elipse"
                 class="absolute top-[224px] right-0"
             />
+            <img 
+                src="./assets/images/vector.png" 
+                alt="vector" 
+                    
+            />
             <div id="header-titles" class="text-center absolute top-[113.5px]">
                 <h2 class="font-normal text-[46px]">تمرکز رو وارد زندگیت کن</h2>
                 <h1 class="font-black text-[64px]">به سمت اهدافت اوج بگیر</h1>
@@ -56,7 +61,7 @@
                 <button class="px-6 py-2 border-none cursor-pointer w-[167px] h-[40px] rounded-lg whitespace-nowrap">درباره ما</button>
             </div>
         </header>
-        <main id="main-content" class="h-full">
+        <main id="main-content" class="h-[95%]">
             <section id="main-picture" class="flex justify-center">
                 <img 
                     src="./assets/images/penoo.svg" 
@@ -164,138 +169,128 @@
                     </div>
                 </div>
             </aside>
-            <section id="comment" class="h-[60%]">
-                <div class="comment-container flex flex-col items-center gap-10">
-                    <header class="comment-header flex flex-col items-center gap-5">
-                        <h3 class="text-[40px] font-bold">نظرات کاربران</h3>
-                        <p class="max-w-md text-center">بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.</p>
-                    </header>
-                    <div class="comment-content grid gap-6">
-                        <div class="comment-card p-8 flex flex-col items-center justify-center rounded-2xl gap-8">
-                            <header class="comment-card-header">
-                                <address class="relative flex gap-4">
-                                    <div class="comment-picture">
-                                        <img 
-                                            src="./assets/images/person1.svg" 
-                                            alt="first_person" 
-                                            class="object-cover"
-                                    />
-                                    </div>
-                                    <div class="comment-info pt-3">
-                                        <h5 class="font-bold">رویا ملکی</h5>
-                                        <p class="py-3 font-light">مهندس نرم افزار دیجی‌کالا</p>
-                                    </div>
-                                </address>
-                            </header>
-                            <div class="comment-desc text-[16px] max-w-[16rem]">
-                                <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+            <section id="comment" class="h-[60%] flex flex-col items-center gap-10">
+                <header class="comment-header flex text-center flex-col items-center gap-4">
+                    <h3>نظرات کاربران</h3>
+                    <p class="max-w-md">بیش از یک دهه است که کوئرا لیست به مردم در سراسر جهان کمک می‌کند تا سازماندهی شوند و به اهداف خود برسند.</p>
+                </header>
+                <div class="comment-body grid grid-cols-3 gap-6">
+                    <div class="comment-card rounded-2xl p-8 flex flex-col gap-6">
+                        <div class="comment-title flex gap-4">
+                            <img 
+                                src="./assets/images/person1.svg" 
+                                alt="first_person"
+                            />
+                            <div class="py-1">
+                                <h4>رویا ملکی</h4>
+                                <p>مهندس نرم افزار دیجی‌کالا</p>
                             </div>
                         </div>
-                        <div class="comment-card p-8 flex flex-col items-center justify-center rounded-2xl gap-8">
-                            <header class="comment-card-header">
-                                <address class="relative flex gap-4">
-                                    <div class="comment-picture">
-                                        <img 
-                                            src="./assets/images/person2.svg" 
-                                            alt="second_person" 
-                                            class="object-cover"
-                                    />
-                                    </div>
-                                    <div class="comment-info pt-3">
-                                        <h5 class="font-bold">رویا ملکی</h5>
-                                        <p class="py-3 font-light">مهندس نرم افزار دیجی‌کالا</p>
-                                    </div>
-                                </address>
-                            </header>
-                            <div class="comment-desc text-[16px] max-w-[16rem]">
-                                <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم</p>
-                            </div>
-                        </div>
-                        <div class="comment-card  p-8 flex flex-col items-center justify-center rounded-2xl gap-8">
-                            <header class="comment-card-header">
-                                <address class="relative flex gap-4">
-                                    <div class="comment-picture">
-                                        <img 
-                                            src="./assets/images/person3.svg" 
-                                            alt="third_person" 
-                                            class="object-cover"
-                                    />
-                                    </div>
-                                    <div class="comment-info pt-3">
-                                        <h5 class="font-bold">رویا ملکی</h5>
-                                        <p class="py-3 font-light">مهندس نرم افزار دیجی‌کالا</p>
-                                    </div>
-                                </address>
-                            </header>
-                            <div class="comment-desc text-[16px] max-w-[16rem]">
-                                <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
-                            </div>
-                        </div>
-                        <div class="comment-card  p-8 flex flex-col items-center justify-center rounded-2xl gap-8">
-                            <header class="comment-card-header">
-                                <address class="relative flex gap-4">
-                                    <div class="comment-picture">
-                                        <img 
-                                            src="./assets/images/person4.svg" 
-                                            alt="4th_person" 
-                                            class="object-cover"
-                                    />
-                                    </div>
-                                    <div class="comment-info pt-3">
-                                        <h5 class="font-bold">رویا ملکی</h5>
-                                        <p class="py-3 font-light">مهندس نرم افزار دیجی‌کالا</p>
-                                    </div>
-                                </address>
-                            </header>
-                            <div class="comment-desc text-[16px] max-w-[16rem]">
-                                <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم</p>
-                            </div>
-                        </div>
-                        <div class="comment-card p-8 flex flex-col items-center justify-center rounded-2xl gap-8">
-                            <header class="comment-card-header">
-                                <address class="relative flex gap-4">
-                                    <div class="comment-picture">
-                                        <img 
-                                            src="./assets/images/person5.svg" 
-                                            alt="5th_person" 
-                                            class="object-cover"
-                                    />
-                                    </div>
-                                    <div class="comment-info pt-3">
-                                        <h5 class="font-bold">رویا ملکی</h5>
-                                        <p class="py-3 font-light">مهندس نرم افزار دیجی‌کالا</p>
-                                    </div>
-                                </address>
-                            </header>
-                            <div class="comment-desc text-[16px] max-w-[16rem]">
-                                <p>تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.</p>
+                        <div class="comment-desc">
+                            <p class="max-w-[16rem] text-[16px] font-light">
+                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
+                            </p>
                         </div>
                     </div>
-                    <div class="comment-card  p-8 flex flex-col items-center justify-center rounded-2xl gap-8">
-                        <header class="comment-card-header">
-                            <address class="relative flex gap-4">
-                                <div class="comment-picture">
-                                    <img 
-                                        src="./assets/images/person6.svg" 
-                                        alt="6th_person" 
-                                        class="object-cover"
-                                />
-                                </div>
-                                <div class="comment-info pt-3">
-                                    <h5 class="font-bold">رویا ملکی</h5>
-                                    <p class="py-3 font-light">مهندس نرم افزار دیجی‌کالا</p>
-                                </div>
-                            </address>
-                        </header>
-                        <div class="comment-desc text-[16px] max-w-[16rem]">
-                            <p>
+                    <div class="comment-card h-[240px] rounded-2xl p-8 flex flex-col gap-6">
+                        <div class="comment-title flex gap-4">
+                            <img 
+                                src="./assets/images/person2.svg" 
+                                alt="second_person"
+                            />
+                            <div class="py-1">
+                                <h4>رویا ملکی</h4>
+                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                            </div>
+                        </div>
+                        <div class="comment-desc">
+                            <p class="max-w-[16rem] text-[16px] font-light">
+                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comment-card rounded-2xl p-8 flex flex-col gap-6">
+                        <div class="comment-title flex gap-4">
+                            <img 
+                                src="./assets/images/person3.svg" 
+                                alt="third_person"
+                            />
+                            <div class="py-1">
+                                <h4>رویا ملکی</h4>
+                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                            </div>
+                        </div>
+                        <div class="comment-desc">
+                            <p class="max-w-[16rem] text-[16px] font-light">
+                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comment-card h-[240px] rounded-2xl p-8 flex flex-col gap-6">
+                        <div class="comment-title flex gap-4">
+                            <img 
+                                src="./assets/images/person4.svg" 
+                                alt="4th_person"
+                            />
+                            <div class="py-1">
+                                <h4>رویا ملکی</h4>
+                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                            </div>
+                        </div>
+                        <div class="comment-desc">
+                            <p class="max-w-[16rem] text-[16px] font-light">
+                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم                            
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comment-card rounded-2xl p-8 flex flex-col gap-6">
+                        <div class="comment-title flex gap-4">
+                            <img 
+                                src="./assets/images/person5.svg" 
+                                alt="5th_person"
+                            />
+                            <div class="py-1">
+                                <h4>رویا ملکی</h4>
+                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                            </div>
+                        </div>
+                        <div class="comment-desc">
+                            <p class="max-w-[16rem] text-[16px] font-light">
+                                تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که باهوش‌تر، سریع‌تر و سازمان دهی شده تر زندگی کنیم و هم چینین همه چیز به گونه‌ای ساده تنظیم شده و میتونیم از یکپارچگی اطلاعات و دیتاها لذت ببریم.                          
+                            </p>
+                        </div>
+                    </div>
+                    <div class="comment-card h-[240px] rounded-2xl p-8 flex flex-col gap-6">
+                        <div class="comment-title flex gap-4">
+                            <img 
+                                src="./assets/images/person6.svg" 
+                                alt="6th_person"
+                            />
+                            <div class="py-1">
+                                <h4>رویا ملکی</h4>
+                                <p>مهندس نرم افزار دیجی‌کالا</p>
+                            </div>
+                        </div>
+                        <div class="comment-desc">
+                            <p class="max-w-[16rem] text-[16px] font-light">
                                 تجربه من با کوئرا لیست زندگی من رو تغییر داده است. من از دنیایی اومدم که همه چیز من در اکسل بود. استفاده از کوئرا لیست به ما این امکان رو می‌دهد که سریع تر باشیم
                             </p>
+                        </div>
                     </div>
                 </div>
-                </div>
+                <footer class="comment-footer flex gap-6">
+                    <div class="right-slider w-[40px] h-[40px] p-[10px]">
+                        <img src="./assets/images/right-slider.svg" alt="right-slider">
+                    </div>
+                    <div class="left-slider w-[40px] h-[40px] p-[10px]">
+                        <img src="./assets/images/left-slider.svg" alt="left-slider">
+                    </div>
+                </footer>
             </section>
         </main>
+        <footer class="h-[20%]">
+            
+        </footer>
     </div>
     <script src="./src/index.js"></script>
 </body>

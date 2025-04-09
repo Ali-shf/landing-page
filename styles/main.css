@@ -153,26 +153,21 @@
     color: var(--gray-p);
 }
 
+#comment .comment-header h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
 #comment .comment-header p {
     font-size: 18px;
     line-height: 30px;
 }
 
-#comment .comment-card {
+#comment .comment-card  {
     box-shadow: 0 4px 63px 0 rgba(0, 0, 0, 0.04);
 }
 
-#comment .comment-content {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-
-#comment .comment-content .comment-card address h5 {
-    line-height: 100%;
-    font-size: 15px;
-}
-
-#comment .comment-info {
-    line-height: 100%;
+#comment .comment-footer div {
+    border: 1px solid #E3E6E8;
+    border-radius: 6px;
 }
