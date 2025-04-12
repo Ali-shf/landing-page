@@ -10,38 +10,38 @@
 /* !main */
 
 
-#main {
+#about-us-main {
     grid-template-columns: repeat(2, 29%);
 }
 
-#main .right-main {
+#about-us-main .right-main {
     box-shadow: 0 4px 63px 0 #00000008;
     border: 1px solid #F5F6F8;
     border-radius: 24px;
 }
 
-#main .right-main .personal-title h2 {
+#about-us-main .right-main .personal-title h2 {
     color: var(--h2-color);
 }
 
-#main .right-main .personal-title h3 {
+#about-us-main .right-main .personal-title h3 {
     color: var(--h3-color);
 }
 
-#main p {
+#about-us-main p {
     color: var(--p-color);
     font-size: 18px;
     line-height: 30px;
 }
 
-#main .left-main .personal-info {
+#about-us-main .left-main .personal-info {
     box-shadow: 0 4px 63px 0 #00000008;
     border: 1px solid #F5F6F8;
     padding: 32px;
     border-radius: 24px;
 }
 
-#main .personal-info div {
+#about-us-main .personal-info div {
     background-color: #F9FAFB;
     border: 1px solid #F5F5F5;
     border-radius: 16px;
@@ -49,13 +49,13 @@
     height: 112px;
 }
 
-#main .personal-info div h3 {
+#about-us-main .personal-info div h3 {
     color: var(--h2-color);
     font-size: 25px;
     font-weight: 600;
 }
 
-#main .personal-info div p {
+#about-us-main .personal-info div p {
     font-size: 18px;
     color: #707070;
 }
