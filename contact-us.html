@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html id="light" lang="fa-IR" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact-us</title>
+</head>
+<body>
+    <div class="contact-us">
+        <!-- !navbar -->
+        <nav id="navbar" class="flex w-full px-[104px] py-6 items-center justify-between">
+            <div class="right-nav flex items-baseline gap-x-[72px]">
+                <h5>کوئرا لیست</h5>
+                <ul class="flex items-center gap-x-[72px]">
+                    <li><a href="./index.html">صفحه اصلی</a></li>
+                    <li><a href="./www.quera.org">درباره ما</a></li>
+                    <li><a href="./contact-us.html">ارتباط با ما</a></li>
+                </ul>
+            </div>
+            <div class="left-nav flex items-center gap-4">
+                <button>ورود به اپلیکیشن</button>
+                <div class="dark-mode rounded-md h-10 w-10 flex items-center justify-center">
+                    <img 
+                        src="./assets/images/dark-mode.png"
+                        alt="dark-mode"
+                        class="object-cover"
+                    />
+                </div>
+            </div>
+        </nav>
+        <!-- -------------------------------------- -->
+        <!-- !main-content -->
+        <main id="main-content" class="mt-[116px] mx-[260px]  gap-x-8 flex justify-between px-8 py-10">
+            <section class="right-main flex-1 relative">
+                <div class="contact-title">
+                    <h1 class="text-[40px] font-bold">تماس با‌ من</h1>
+                    <p class="max-w-[26rem] pt-3 text-[20px]">چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.
+                    </p>
+                </div>
+                <address class="contact-address mt-8 flex flex-col gap-4">
+                    <div class="contact-phone flex gap-2">
+                        <img     
+                            src="./assets/images/light-call.svg" 
+                            alt="light-call" 
+                        />
+                        <p class="font-semibold text-[18px]">0912 1234567</p>
+                    </div>
+                    <div class="contact-email flex gap-2">
+                        <img 
+                            src="./assets/images/sms.svg" 
+                            alt="sms" 
+                        />
+                        <p class="font-medium text-[18px]">QueraList@gmail.com</p>
+                    </div>
+                </address>
+                <div class="contact-social-media absolute bottom-0 right-0">
+                    <ul class="flex gap-x-8">
+                        <li>
+                            <a href="#">
+                                <img 
+                                    src="./assets/images/github.svg" alt="github" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img 
+                                    src="./assets/images/twitter.svg" alt="twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img     
+                                src="./assets/images/linkedin.svg" alt="linkedin" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="vertical-line">
+                <img src="./assets/images/rectangle.svg" alt="rectangle" />
+            </section>
+            <section class="left-main flex-1">
+                <form action="" class="grid grid-cols-1 gap-y-8 px-8">
+                    <div class="flex gap-x-6">
+                        <div class="firstname flex-1 flex flex-col gap-1">
+                            <label for="firstname">نام:</label>
+                            <input 
+                                type="text" 
+                                name="firstname" 
+                                id="firstname" 
+                                placeholder="نام شما"    
+                            />
+                        </div>
+                        <div class="lastname flex-1 flex flex-col gap-1">
+                            <label for="lastname">نام خانوادگی:</label>
+                            <input 
+                                type="text" 
+                                name="lastname" 
+                                id="lastname" 
+                                placeholder="نام خانوادگی شما"  
+                            />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ایمیل:</label>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            id="email" 
+                            placeholder="ایمیل"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">شماره تماس:</label>
+                        <input 
+                            type="number" 
+                            name="number" 
+                            id="number" 
+                            placeholder="ایمیل"
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">متن:</label>
+                        <textarea 
+                            name="msg" 
+                            id="msg"
+                            placeholder="متن پیام شما"
+                            class="resize-none h-[136px]"
+                            >
+                        </textarea>
+                    </div>
+                    <button type="submit">ارسال پیام</button>
+                </form>
+            </section>
+        </main>
+        <!-- -------------------------------------- -->
+        <!-- !footer -->
+        <footer id="footer" class="mt-[86px]">
+            <div class="footer-header flex justify-center items-center gap-x-4">
+                <img 
+                    src="./assets/images/line.svg" 
+                    alt="line"     
+                />
+                <h3 class="font-semibold text-[20px]">کوئرا لیست</h3>
+                <img 
+                    src="./assets/images/line.svg" 
+                    alt="line"     
+                />
+            </div>
+            <div class="footer-body pt-12 flex justify-between px-[160px]">
+                <div class="right-footer-body">
+                    <address class="FAQ flex gap-x-4">
+                        <img src="./assets/images/bag.svg" alt="bag" />
+                        <p>فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                    </address>
+                    <address class="call py-4 flex gap-x-4">
+                        <img src="./assets/images/call.svg" alt="call" />
+                        <p>تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                    </address>
+                    <address class="location flex items-start gap-x-4">
+                        <img src="./assets/images/location.svg" alt="location" />
+                        <p class="max-w-[15rem]">
+                            آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
+                        </p>
+                    </address>
+                </div>
+                <div class="left-body-footer">
+                    <div class="left-body-title text-[16px]">
+                        <h4 class="font-bold">با ما در ارتباط باش</h4>
+                        <p class="max-w-[18rem] pt-[12px]">اگه میخوای اولین نفری باشی که از فیچرهای جدید 
+                            و تخفیفات با خبر بشی.
+                        </p>
+                    </div>
+                    <div class="left-body-email mt-[32px] flex justify-between items-center">
+                        <span>ایمیل</span>
+                        <button>ارسال</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end pt-[64px] text-center">
+                <p>
+                    تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+</html>
