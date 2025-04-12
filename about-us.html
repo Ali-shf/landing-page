@@ -8,41 +8,117 @@
     <title>About-us</title>
 </head>
 <body>
-    <div class="about-us">
-        <nav class="navbar-container w-full h-[10%] flex justify-between items-center py-6 px-26">
-            <ul class="navbar-list flex gap-8">
-                <li class="px-4"><a id="quera-list" class="text-[20px]" href="https://www.quera.org">کوئرا لیست</a></li>
-                <li class="px-4"><a id="blue-link" href="./index.html">صفحه اصلی</a></li>
-                <li class="px-4"><a id="gray-600" href="./contact-us.html">ارتباط با ما</a></li>
-                <li class="px-4"><a id="gray-600" href="./about-us.html">درباره ما</a></li>
-            </ul> 
-            <div class="navbar-action flex gap-4">
-                <button class="px-6 py-2 border-none cursor-pointer w-[167px] h-[40px] rounded-lg text-white whitespace-nowrap">ورود به اپلیکیشن</button>
-                <div class="w-10 h-10 flex justify-center items-center rounded-md">
-                    <img class="w-6 h-6 cursor-pointer object-cover" src="./assets/images/dark-mode.png" alt="dark-mode" />
+    <div class="about-us w-full">
+        <nav id="navbar" class="flex w-full px-[104px] py-6 items-center justify-between">
+            <div class="right-nav flex items-baseline gap-x-[72px]">
+                <h5>کوئرا لیست</h5>
+                <ul class="flex items-center gap-x-[72px]">
+                    <li><a href="./index.html">صفحه اصلی</a></li>
+                    <li><a href="./www.quera.org">درباره ما</a></li>
+                    <li><a href="./contact-us.html">ارتباط با ما</a></li>
+                </ul>
+            </div>
+            <div class="left-nav flex items-center gap-4">
+                <button>ورود به اپلیکیشن</button>
+                <div class="dark-mode rounded-md h-10 w-10 flex items-center justify-center">
+                    <img 
+                        src="./assets/images/dark-mode.png"
+                        alt="dark-mode"
+                        class="object-cover"
+                    />
                 </div>
             </div>
         </nav>
-        <main id="main-content" class="flex justify-center">
-            <section class="personal-info grid grid-cols-2">
-                <div class="right-content flex flex-col gap-4">
-                    <header class="right-header">
-                        <h1 class="font-bold text-[40px]">درباره من</h1>
-                        <h2 class="text-[32px] pt-4">محمد محمدی</h2>
-                    </header>
-                    <div class="right-content">
-                        <p class="max-w-md">
-                            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-                        </p>
-                        <p class="max-w-md">کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-                        </p>
-                        <p class="max-w-md">
-                            کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
-                        </p>
-                    </div>
+        <main id="main-content" class="mt-[116px] place-content-center grid gap-6">
+            <section class="right-main p-8">
+                <div class="personal-title">
+                    <h2 class="font-bold text-[40px]">درباره‌ من</h2>
+                    <h3 class="text-[32px] pt-3 pb-6">محمد محمدی</h3>
+                </div>
+                <div class="personal-desc">
+                    <p class="max-w-[26rem]">
+                        کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+                    </p>
+                    <p class="max-w-[26rem]">
+                        کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+                    </p>
+                    <p class="max-w-[26rem]">
+                        کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
+                    </p>
                 </div>
             </section>
+            <section class="left-main">
+                <div class="personal-img">
+                    <img src="./assets/images/personal-img.svg" alt="personal-img" />
+                </div>
+                <address class="personal-info mt-6 grid gap-6 grid-cols-2">
+                    <div class="birthday py-4 pr-[32px]">
+                        <h3>1379</h3>
+                        <p class="pt-1">سال تولد</p>
+                    </div>
+                    <div class="residence py-4 pr-[32px]">
+                        <h3>تهران</h3>
+                        <p class="pt-1">محل زندگی</p>
+                    </div>
+                    <div class="experience py-4 pr-[32px]">
+                        <h3>3.5</h3>
+                        <p class="pt-1">سال تجربه کار   </p>
+                    </div>
+                    <div class="contribute py-4 pr-[32px]">
+                        <h3>+10</h3>
+                        <p class="pt-1">مشارکت در پروژه‌ </p>
+                    </div>
+                </address>
+            </section>
         </main>
+        <footer id="footer" class="mt-[71px]">
+            <div class="footer-header flex justify-center items-center gap-x-4">
+                <img 
+                    src="./assets/images/line.svg" 
+                    alt="line"     
+                />
+                <h3 class="font-semibold text-[20px]">کوئرا لیست</h3>
+                <img 
+                    src="./assets/images/line.svg" 
+                    alt="line"     
+                />
+            </div>
+            <div class="footer-body pt-12 flex justify-between px-[160px]">
+                <div class="right-footer-body">
+                    <address class="FAQ flex gap-x-4">
+                        <img src="./assets/images/bag.svg" alt="bag" />
+                        <p>فکس: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                    </address>
+                    <address class="call py-4 flex gap-x-4">
+                        <img src="./assets/images/call.svg" alt="call" />
+                        <p>تلفن پشتیبانی: ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                    </address>
+                    <address class="location flex items-start gap-x-4">
+                        <img src="./assets/images/location.svg" alt="location" />
+                        <p class="max-w-[15rem]">
+                            آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
+                        </p>
+                    </address>
+                </div>
+                <div class="left-body-footer">
+                    <div class="left-body-title text-[16px]">
+                        <h4 class="font-bold">با ما در ارتباط باش</h4>
+                        <p class="max-w-[18rem] pt-[12px]">اگه میخوای اولین نفری باشی که از فیچرهای جدید 
+                            و تخفیفات با خبر بشی.
+                        </p>
+                    </div>
+                    <div class="left-body-email mt-[32px] flex justify-between items-center">
+                        <span>ایمیل</span>
+                        <button>ارسال</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end pt-[64px] text-center">
+                <p>
+                    تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
+                </p>
+            </div>
+        </footer>
     </div>
     <script src="src/index.js"></script>
 </body>

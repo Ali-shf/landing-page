@@ -91,6 +91,20 @@
     font-size: 16px;
 }
 
+#navbar .left-nav .dropdown-content {
+    box-shadow: 0 12px 24px -6px #1414190F;
+    border: 1px solid #EBEDEF;
+    border-radius: 8px;
+    width: 240px;
+    height: 184px;
+}
+
+#navbar .left-nav .dropdown-content a {
+    font-size: 14px;
+    line-height: 24px;
+    color: #191C1E;
+}
+
 #navbar .left-nav .dark-mode {
     border: 1px solid #E3E3E3;
 }
