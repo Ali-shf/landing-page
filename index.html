@@ -10,9 +10,14 @@
 <body>
     <div class="landing-page h-full">
         <!-- !navbar -->
-        <nav id="navbar" class="flex w-full px-[104px] py-6 items-center justify-between">
+        <nav id="navbar" class="flex sm: w-full px-[104px] py-6 items-center justify-between">
             <div class="right-nav flex items-baseline gap-x-[72px]">
-                <h5>کوئرا لیست</h5>
+                <img 
+                src="./assets/images/hamburger-menu.svg" 
+                alt="hamburger-menu"
+                class="hidden"
+                />
+                <h5 class="whitespace-nowrap">کوئرا لیست</h5>
                 <ul class="flex items-center gap-x-[72px]">
                     <li><a href="./index.html">صفحه اصلی</a></li>
                     <li><a href="./about-us.html">درباره ما</a></li>
@@ -39,7 +44,12 @@
                 <img 
                     src="./assets/images/vector.svg" 
                     alt="vector" 
-                    class="pt-6"
+                    class="desktop pt-6"
+                />
+                <img 
+                    src="./assets/images/mobile/small-vector.svg" 
+                    alt="small-vector"
+                    class="mobile hidden"
                 />
             </div>
             <div class="header-content text-center">
@@ -73,20 +83,47 @@
                     class="absolute top-[60px] right-[332px]"    
                 />
             </div>
+            <div class="header-shapes-mobile">
+                <img 
+                    src="./assets/images/mobile/small-star.svg" 
+                    alt="small-star" 
+                    class="absolute left-10 top-1/2 hidden"
+                />
+                <img 
+                    src="./assets/images/mobile/small-star.svg" 
+                    alt="small-star" 
+                    class="absolute top-10 right-10 hidden"
+                />
+                <img 
+                    src="./assets/images/Ellipse 130.svg" 
+                    alt="circle" 
+                    class="absolute left-0 top-[5%] hidden"
+                />
+            </div>
         </header>
         <!-- -------------------------------------- -->
         <!-- !main-content -->
-        <main id="main" class="grid grid-cols-1 gap-y-[124px] px-[160px]">
+        <main id="main" class="flex flex-col justify-center items-center gap-10">
             <div class="main-picture !mx-auto">
                 <img 
                     src="./assets/images/penoo.svg" 
-                    alt="penoo">
+                    alt="penoo"
+                    class="desktop"
+                />
+                <img 
+                    src="./assets/images/mobile/small-penoo.svg" 
+                    alt="small-penoo" 
+                    class="mobile hidden"
+                />
             </div>
-            <div class="features relative h-[450px] flex flex-col items-center gap-10">
+            <div class="features relative flex flex-col items-center gap-10">
                 <div class="features-title">
-                    <h2>ویژگی‌های اپلیکیشن کوئرالیست</h2>
-                    <p class="max-w-[30rem]  mt-3">
+                    <h2 class="whitespace-nowrap">ویژگی‌های اپلیکیشن کوئرالیست</h2>
+                    <p class="desktop max-w-[30rem] mt-3">
                         ما توی تیم کوئرا لیست بر اساس بازخوردهای شما و جدیدترین ترندهای بازار همواره در تلاشیم تا بهترین تجربه کاربری رو براتون به ارمغان بیاریم.
+                    </p>
+                    <p class="mobile hidden">
+                        زمان در یک روز برای ما محدود است، اما مهمترین کار این است که چگونه از آن استفاده می‌کنیم. با اپلیکیشن کوییرا لیست، زمان خود را با هدف و برنامه‌ریزی موثر سپری کنید."
                     </p>
                 </div>
                 <div class="features-items h-[262px] grid gap-6">
@@ -143,11 +180,16 @@
                     />
                 </div>
             </div>
-            <div class="download relative flex justify-center gap-[42px]">
-                <div class="right-side w-[540px] flex flex-col gap-4">
+            <div class="download relative flex justify-center items-center text-center gap-[42px]">
+                <div class="right-side flex flex-col gap-4">
                     <div class="right-title">
                         <p>اپلیکیشن اندروید و IOS</p>
                         <h2>دانلود اپلیکیشن</h2>
+                        <img 
+                        src="./assets/images/mobile/Mobile_clay_mockup.svg" 
+                        alt="mobile-clay"
+                        class="mobile hidden" 
+                        />
                     </div>
                     <div class="right-content">
                         <p class="max-w-[26rem]">
@@ -163,7 +205,11 @@
                     </div>
                 </div>
                 <div class="left-side">
-                    <img src="./assets/images/group.svg" alt="group">
+                    <img 
+                        src="./assets/images/group.svg" 
+                        alt="group"
+                        class="desktop"
+                    />
                 </div>
                 <div class="download-shape">
                     <img 
@@ -301,17 +347,18 @@
             </section>
         </main>
         <!-- -------------------------------------- -->
-        <!-- !footer -->
+        <!-- !footer-desktop -->
         <footer id="footer" class="mt-[120px]">
             <div class="footer-header flex justify-center items-center gap-x-4">
-                <img 
+                <img
                     src="./assets/images/line.svg" 
                     alt="line"     
                 />
-                <h3 class="font-semibold text-[20px]">کوئرا لیست</h3>
+                <h3 class="font-semibold whitespace-nowrap text-[20px]">کوئرا لیست</h3>
                 <img 
                     src="./assets/images/line.svg" 
-                    alt="line"     
+                    alt="line"
+                    class="desktop"     
                 />
             </div>
             <div class="footer-body pt-12 flex justify-between px-[160px]">
@@ -351,6 +398,71 @@
             </div>
         </footer>
         <!-- -------------------------------------- -->
+        <!-- !footer-mobile -->
+        <footer id="footer-mobile" class="hidden">
+            <div class="footer-mobile-header">
+                <img 
+                    src="./assets/images/mobile/small-vertical-line.svg" 
+                    alt="small-vertical-line"
+                />
+                <h4>کوئرا لیست</h4>
+                <img 
+                    src="./assets/images/mobile/small-vertical-line.svg" 
+                    alt="small-vertical-line"
+                />
+            </div>
+            <div class="footer-mobile-body">
+                <div class="footer-mobile-body-contact">
+                    <div class="footer-mobile-body-title">
+                        <h4>با ما در ارتباط باش</h4>
+                        <p>اگه میخوای اولین نفری باشی که از فیچرهای جدید  و تخفیفات با خبر بشی.
+                        </p>
+                    </div>
+                    <div class="footer-mobile-body-btn">
+                        <span>ایمیل</span>
+                        <button>ارسال</button>
+                    </div>
+                </div>
+                <div class="footer-mobile-body-address">
+                    <div class="footer-mobile-address-right">
+                        <address class="footer-mobile-body-location">
+                            <img 
+                                src="./assets/images/mobile/location.svg"
+                                alt="location" 
+                            />
+                            <p>
+                                آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
+                            </p>
+                        </address>
+                    </div>
+                    <div class="footer-mobile-address-left">
+                        <address class="footer-mobile-body-call">
+                            <img 
+                                src="./assets/images/mobile/call.svg"
+                                alt="call" 
+                            />
+                            <div>
+                                <p class="whitespace-nowrap">تلفن پشتیبانی</p>
+                                <p> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                            </div>
+                        </address>
+                        <address class="footer-mobile-body-faq">
+                            <img 
+                                src="./assets/images/mobile/faq.svg"
+                                alt="faq" 
+                            />
+                            <div>
+                                <p>فکس</p>
+                                <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mobile-end">
+                <p>تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.</p>
+            </div>
+        </footer>
     </div>
     <script src="./src/index.js"></script>
 </body>
