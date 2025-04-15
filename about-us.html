@@ -10,9 +10,14 @@
 <body>
     <div class="about-us w-full">
         <!-- !navbar -->
-        <nav id="navbar" class="flex w-full px-[104px] py-6 items-center justify-between">
+        <nav id="navbar" class="flex relative w-full px-[104px] py-6 items-center justify-between">
+            <img 
+                src="./assets/images/hamburger-menu.svg" 
+                alt="hamburger-menu"
+                class="mobile hidden absolute right-4"
+            />
             <div class="right-nav flex items-baseline gap-x-[72px]">
-                <h5>کوئرا لیست</h5>
+                <h5 class="whitespace-nowrap">کوئرا لیست</h5>
                 <ul class="flex items-center gap-x-[72px]">
                     <li><a href="./index.html">صفحه اصلی</a></li>
                     <li><a href="./about-us.html">درباره ما</a></li>
@@ -33,6 +38,15 @@
         <!-- -------------------------------------- -->
         <!-- !main-content -->
         <main id="about-us-main" class="mt-[116px] place-content-center grid gap-6">
+            <img 
+                src="./assets/images/mobile/personal-image.svg" 
+                alt="personal-image"
+                class="mobile hidden"
+            />
+            <div class="mobile-personal-title hidden text-center">
+                <h2>درباره‌ من</h2>
+                <h3>محمد محمدی</h3>
+            </div>
             <section class="right-main p-8">
                 <div class="personal-title">
                     <h2 class="font-bold text-[40px]">درباره‌ من</h2>
@@ -68,6 +82,26 @@
                         <p class="pt-1">سال تجربه کار   </p>
                     </div>
                     <div class="contribute py-4 pr-[32px]">
+                        <h3>+10</h3>
+                        <p class="pt-1">مشارکت در پروژه‌ </p>
+                    </div>
+                </address>
+            </section>
+            <section class="mobile-personal-info hidden">
+                <address class="grid gap-4 place-content-center">
+                    <div class="birthday py-4 pr-3">
+                        <h3>1379</h3>
+                        <p class="pt-1">سال تولد</p>
+                    </div>
+                    <div class="residence py-4 pr-3">
+                        <h3>تهران</h3>
+                        <p class="pt-1">محل زندگی</p>
+                    </div>
+                    <div class="experience py-4 pr-3">
+                        <h3>3.5</h3>
+                        <p class="pt-1">سال تجربه کار   </p>
+                    </div>
+                    <div class="contribute py-4 pr-3">
                         <h3>+10</h3>
                         <p class="pt-1">مشارکت در پروژه‌ </p>
                     </div>
@@ -125,6 +159,71 @@
             </div>
         </footer>
         <!-- -------------------------------------- -->
+        <!-- !footer-mobile -->
+        <footer id="footer-mobile" class="hidden">
+            <div class="footer-mobile-header">
+                <img 
+                    src="./assets/images/mobile/small-vertical-line.svg" 
+                    alt="small-vertical-line"
+                />
+                <h4>کوئرا لیست</h4>
+                <img 
+                    src="./assets/images/mobile/small-vertical-line.svg" 
+                    alt="small-vertical-line"
+                />
+            </div>
+            <div class="footer-mobile-body">
+                <div class="footer-mobile-body-contact">
+                    <div class="footer-mobile-body-title">
+                        <h4>با ما در ارتباط باش</h4>
+                        <p>اگه میخوای اولین نفری باشی که از فیچرهای جدید  و تخفیفات با خبر بشی.
+                        </p>
+                    </div>
+                    <div class="footer-mobile-body-btn">
+                        <span>ایمیل</span>
+                        <button>ارسال</button>
+                    </div>
+                </div>
+                <div class="footer-mobile-body-address">
+                    <div class="footer-mobile-address-right">
+                        <address class="footer-mobile-body-location">
+                            <img 
+                                src="./assets/images/mobile/location.svg"
+                                alt="location" 
+                            />
+                            <p>
+                                آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
+                            </p>
+                        </address>
+                    </div>
+                    <div class="footer-mobile-address-left">
+                        <address class="footer-mobile-body-call">
+                            <img 
+                                src="./assets/images/mobile/call.svg"
+                                alt="call" 
+                            />
+                            <div>
+                                <p class="whitespace-nowrap">تلفن پشتیبانی</p>
+                                <p> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                            </div>
+                        </address>
+                        <address class="footer-mobile-body-faq">
+                            <img 
+                                src="./assets/images/mobile/faq.svg"
+                                alt="faq" 
+                            />
+                            <div>
+                                <p>فکس</p>
+                                <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mobile-end">
+                <p>تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.</p>
+            </div>
+        </footer>
     </div>
     <script src="src/index.js"></script>
 </body>

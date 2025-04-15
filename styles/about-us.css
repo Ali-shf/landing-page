@@ -59,3 +59,65 @@
     font-size: 18px;
     color: #707070;
 }
+
+/* !responsive design */
+@media screen and (max-width: 450px) {
+    /* !about-main-content */
+    #about-us-main {
+        margin: 24px 16px 0 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    #about-us-main .left-main {
+        display: none;
+    }
+    #about-us-main .mobile {
+        display: block;
+    }
+    #about-us-main .personal-title {
+        display: none;
+    }
+    #about-us-main .mobile-personal-title {
+        display: block;
+    }
+    #about-us-main .mobile-personal-title h2 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #141414;
+    }
+    #about-us-main .mobile-personal-title h3 {
+        font-size: 28px;
+        font-weight: 800;
+        color: #575757;
+        padding-top: 8px;
+    }
+    #about-us-main .right-main .personal-desc p {
+        font-size: 12px;
+        line-height: 30px;
+        color: #444749;
+        width: 20rem;
+    }
+    #about-us-main .mobile-personal-info {
+        display: block;
+    }
+    #about-us-main .mobile-personal-info address {
+        grid-template-columns: repeat(2, 100%);
+    }
+    #about-us-main .mobile-personal-info address div {
+        border: 1px solid #F5F6F8;
+        box-shadow: 0 4px 63px 0 #00000008;
+        border-radius: 16px;
+        height: 90px;
+    }
+    #about-us-main .mobile-personal-info address div h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    #about-us-main .mobile-personal-info address div p {
+        font-size: 12px;
+        line-height: 16px;
+        color: #444749;
+    }
+}

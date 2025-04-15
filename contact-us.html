@@ -10,9 +10,14 @@
 <body>
     <div class="contact-us">
         <!-- !navbar -->
-        <nav id="navbar" class="flex w-full px-[104px] py-6 items-center justify-between">
+        <nav id="navbar" class="flex relative w-full px-[104px] py-6 items-center justify-between">
+            <img 
+                src="./assets/images/hamburger-menu.svg" 
+                alt="hamburger-menu"
+                class="mobile hidden absolute right-4"
+            />
             <div class="right-nav flex items-baseline gap-x-[72px]">
-                <h5>کوئرا لیست</h5>
+                <h5 class="whitespace-nowrap">کوئرا لیست</h5>
                 <ul class="flex items-center gap-x-[72px]">
                     <li><a href="./index.html">صفحه اصلی</a></li>
                     <li><a href="./about-us.html">درباره ما</a></li>
@@ -32,7 +37,11 @@
         </nav>
         <!-- -------------------------------------- -->
         <!-- !main-content -->
-        <main id="main-content" class="mt-[116px] mx-[260px]  gap-x-8 flex justify-between px-8 py-10">
+        <main id="contact-us-main" class="mt-[116px] mx-[260px] gap-x-8 flex justify-between px-8 py-10">
+            <div class="mobile-contact-title hidden">
+                <h1>تماس با ما</h1>
+                <p>چیزی هست که بخوای ازم بپرسی؟ خوشحال میشم بتونم بهت کمکی کنم.</p>
+            </div>
             <section class="right-main flex-1 relative">
                 <div class="contact-title">
                     <h1 class="text-[40px] font-bold">تماس با‌ من</h1>
@@ -82,8 +91,8 @@
                 <img src="./assets/images/rectangle.svg" alt="rectangle" />
             </section>
             <section class="left-main flex-1">
-                <form action="" class="grid grid-cols-1 gap-y-8 px-8">
-                    <div class="flex gap-x-6">
+                <form action="" class="flex flex-col gap-y-8 px-8">
+                    <div class="fullname flex gap-x-6">
                         <div class="firstname flex-1 flex flex-col gap-1">
                             <label for="firstname">نام:</label>
                             <input 
@@ -134,6 +143,52 @@
                     <button type="submit">ارسال پیام</button>
                 </form>
             </section>
+            <section class="mobile-contact-container hidden">
+                <div class="mobile-contact-us w-full flex gap-4">
+                    <div class="mobile-email w-full flex gap-2 p-3">
+                        <img 
+                            src="./assets/images/mobile/email.svg" 
+                            alt="email" 
+                        />
+                        <div>
+                            <h4 class="font-bold text-[10px]">ایمیل</h4>
+                            <p class="text-[10px] pt-[1px]">QueraList@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="mobile-call w-full flex gap-2 p-3">
+                        <img 
+                            src="./assets/images/mobile/light-call.svg" 
+                            alt="call" 
+                        />
+                        <div>
+                            <h4 class="font-bold text-[10px]">تلفن</h4>
+                            <p class="text-[10px] pt-[1px]">09121234567</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-socail-media">
+                    <ul class="flex gap-x-8">
+                        <li>
+                            <a href="#">
+                                <img 
+                                    src="./assets/images/mobile/github.svg" alt="github" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img 
+                                    src="./assets/images/mobile/twitter.svg" alt="twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img     
+                                src="./assets/images/mobile/linkedin.svg" alt="linkedin" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
         </main>
         <!-- -------------------------------------- -->
         <!-- !footer -->
@@ -183,6 +238,71 @@
                 <p>
                     تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.
                 </p>
+            </div>
+        </footer>
+        <!-- !footer-mobile -->
+        <footer id="footer-mobile" class="hidden">
+            <div class="footer-mobile-header">
+                <img 
+                    src="./assets/images/mobile/small-vertical-line.svg" 
+                    alt="small-vertical-line"
+                />
+                <h4>کوئرا لیست</h4>
+                <img 
+                    src="./assets/images/mobile/small-vertical-line.svg" 
+                    alt="small-vertical-line"
+                />
+            </div>
+            <div class="footer-mobile-body">
+                <div class="footer-mobile-body-contact">
+                    <div class="footer-mobile-body-title">
+                        <h4>با ما در ارتباط باش</h4>
+                        <p>اگه میخوای اولین نفری باشی که از فیچرهای جدید  و تخفیفات با خبر بشی.
+                        </p>
+                    </div>
+                    <div class="footer-mobile-body-btn">
+                        <span>ایمیل</span>
+                        <button>ارسال</button>
+                    </div>
+                </div>
+                <div class="footer-mobile-body-address">
+                    <div class="footer-mobile-address-right">
+                        <address class="footer-mobile-body-location">
+                            <img 
+                                src="./assets/images/mobile/location.svg"
+                                alt="location" 
+                            />
+                            <p>
+                                آدرس دفتر مرکزی: پونک - خیابان اشرفی اصفهانی - خیابان صبحدل- بن بست شب بو
+                            </p>
+                        </address>
+                    </div>
+                    <div class="footer-mobile-address-left">
+                        <address class="footer-mobile-body-call">
+                            <img 
+                                src="./assets/images/mobile/call.svg"
+                                alt="call" 
+                            />
+                            <div>
+                                <p class="whitespace-nowrap">تلفن پشتیبانی</p>
+                                <p> ۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                            </div>
+                        </address>
+                        <address class="footer-mobile-body-faq">
+                            <img 
+                                src="./assets/images/mobile/faq.svg"
+                                alt="faq" 
+                            />
+                            <div>
+                                <p>فکس</p>
+                                <p>۴۴۴۴۵۵۶۶ - ۰۲۱</p>
+                            </div>
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mobile-end">
+                <p>تمامی حقوق مادی و معنوی این سایت متعلق به کوئرا لیست می‌باشد.</p>
             </div>
         </footer>
     </div>
