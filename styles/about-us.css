@@ -62,6 +62,10 @@
 
 /* !responsive design */
 @media screen and (max-width: 450px) {
+    /* !navbar */
+    #navbar {
+        box-shadow: 0 4px 18px 0 #1848900F;
+    }
     /* !about-main-content */
     #about-us-main {
         margin: 24px 16px 0 16px;

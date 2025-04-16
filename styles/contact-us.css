@@ -56,6 +56,10 @@
 /* !responsive design */
 
 @media screen and (max-width: 450px) {
+    /* !navbar */
+    #navbar {
+        box-shadow: 0 4px 18px 0 #1848900F;
+    }
     /* contact-us-main */
     #contact-us-main  {
         flex-direction: column;

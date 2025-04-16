@@ -11,11 +11,6 @@
     <div class="landing-page h-full">
         <!-- !navbar -->
         <nav id="navbar" class="flex relative w-full px-[104px] py-6 items-center justify-between">
-            <img 
-                src="./assets/images/hamburger-menu.svg" 
-                alt="hamburger-menu"
-                class="mobile hidden absolute right-4"
-            />
             <div class="right-nav flex items-baseline gap-x-[72px]">
                 <h5 class="whitespace-nowrap">کوئرا لیست</h5>
                 <ul class="flex items-center gap-x-[72px]">
@@ -33,6 +28,26 @@
                         class="object-cover"
                     />
                 </div>
+            </div>
+        </nav>
+        <!-- -------------------------------------- -->
+        <!-- !mobile-navbar -->
+        <nav id="mobile-navbar" class="hidden">
+            <a href="#" class="mobile-logo">
+                <h5 class="whitespace-nowrap">کوئرا لیست</h5>
+            </a>
+            <div class="hamburger-container">
+                <div class="hamburger-menu">
+                    <img 
+                    src="./assets/images/hamburger-menu.svg" 
+                    alt="hamburger-menu" 
+                />
+                </div>
+                <ul id="hamburger-list" class="hidden">
+                    <li><a href="./index.html">صفحه اصلی</a></li>
+                    <li><a href="./about-us.html">درباره ما</a></li>
+                    <li><a href="./contact-us.html">ارتباط با ما</a></li>
+                </ul>
             </div>
         </nav>
         <!-- -------------------------------------- -->

@@ -36,6 +36,26 @@
             </div>
         </nav>
         <!-- -------------------------------------- -->
+        <!-- !mobile-navbar -->
+        <nav id="mobile-navbar" class="hidden relative">
+            <a href="#" class="mobile-logo">
+                <h5 class="whitespace-nowrap">کوئرا لیست</h5>
+            </a>
+            <div class="hamburger-container">
+                <div class="hamburger-menu">
+                    <img 
+                    src="./assets/images/hamburger-menu.svg" 
+                    alt="hamburger-menu" 
+                />
+                </div>
+                <ul id="hamburger-list" class="hidden">
+                    <li><a href="./index.html">صفحه اصلی</a></li>
+                    <li><a href="./about-us.html">درباره ما</a></li>
+                    <li><a href="./contact-us.html">ارتباط با ما</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- -------------------------------------- -->
         <!-- !main-content -->
         <main id="contact-us-main" class="mt-[116px] mx-[260px] gap-x-8 flex justify-between px-8 py-10">
             <div class="mobile-contact-title hidden">
@@ -150,7 +170,7 @@
                             src="./assets/images/mobile/email.svg" 
                             alt="email" 
                         />
-                        <div>
+                        <div class="text-start">
                             <h4 class="font-bold text-[10px]">ایمیل</h4>
                             <p class="text-[10px] pt-[1px]">QueraList@gmail.com</p>
                         </div>
@@ -160,14 +180,14 @@
                             src="./assets/images/mobile/light-call.svg" 
                             alt="call" 
                         />
-                        <div>
+                        <div class="text-start">
                             <h4 class="font-bold text-[10px]">تلفن</h4>
                             <p class="text-[10px] pt-[1px]">09121234567</p>
                         </div>
                     </div>
                 </div>
-                <div class="mobile-socail-media">
-                    <ul class="flex gap-x-8">
+                <div class="mobile-socail-media w-full">
+                    <ul class="flex justify-center items-center h-[56px] gap-x-8">
                         <li>
                             <a href="#">
                                 <img 
