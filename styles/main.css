@@ -273,6 +273,9 @@
         font-weight: 600;
         text-align: center;
     }
+    #mobile-navbar > img {
+        display: block;
+    }
     #mobile-navbar .hamburger-container {
         width: 200px;
         height: 200px;
@@ -284,12 +287,6 @@
     }
     #mobile-navbar .hamburger-container.active {
         right: 0;
-    }
-    #mobile-navbar .hamburger-container .hamburger-menu {
-        position: fixed;
-        top: 12px;
-        right: 16px;
-        cursor: pointer;
     }
     #mobile-navbar .hamburger-container #hamburger-list {
         display: flex;
