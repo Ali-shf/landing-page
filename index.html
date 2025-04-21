@@ -12,20 +12,20 @@
         <!-- !navbar -->
         <nav id="navbar" class="flex relative w-full px-[104px] py-6 items-center justify-between">
             <div class="right-nav flex items-baseline gap-x-[72px]">
-                <h5 class="whitespace-nowrap">کوئرا لیست</h5>
+                <h5 class="whitespace-nowrap cursor-pointer">کوئرا لیست</h5>
                 <ul class="flex items-center gap-x-[72px]">
-                    <li><a href="./index.html">صفحه اصلی</a></li>
-                    <li><a href="./about-us.html">درباره ما</a></li>
-                    <li><a href="./contact-us.html">ارتباط با ما</a></li>
+                    <li><a href="./index.html" id="home-page">صفحه اصلی</a></li>
+                    <li><a href="./about-us.html" id="about-us">درباره ما</a></li>
+                    <li><a href="./contact-us.html" id="contact-us">ارتباط با ما</a></li>
                 </ul>
             </div>
             <div class="left-nav flex items-center gap-4">
-                <button>ورود به اپلیکیشن</button>
+                <button class="cursor-pointer">ورود به اپلیکیشن</button>
                 <div class="dark-mode rounded-md h-10 w-10 flex items-center justify-center">
                     <img 
                         src="./assets/images/dark-mode.png"
-                        alt="dark-mode"
-                        class="object-cover"
+                        alt="light-mode"
+                        class="light object-cover cursor-pointer"
                     />
                 </div>
             </div>
@@ -73,28 +73,28 @@
             </div>
             <div class="header-btn flex gap-x-4">
                 <button class="right-btn">ورود به اپلیکیشن</button>
-                <button class="left-btn">درباره ما</button>
+                <button class="left-btn transition duration-500">درباره ما</button>
             </div>
             <div class="header-shapes">
                 <img 
                     src="./assets/images/Ellipse.png" 
                     alt="circle" 
-                    class="absolute top-[60px] left-[36px]"    
+                    class="circle absolute top-[60px] left-[36px]"    
                 />
                 <img 
                     src="./assets/images/Ellipse 129.svg" 
                     alt="circle" 
-                    class="absolute -right-[36px] top-[224px]"    
+                    class="circle absolute -right-[36px] top-[224px]"    
                 />
                 <img 
                     src="./assets/images/star.png" 
                     alt="star" 
-                    class="absolute top-[335px] left-[192px]"    
+                    class="star absolute top-[335px] left-[192px]"    
                 />
                 <img 
                     src="./assets/images/star.png" 
                     alt="star" 
-                    class="absolute top-[60px] right-[332px]"    
+                    class="star absolute top-[60px] right-[332px]"    
                 />
             </div>
             <div class="header-shapes-mobile">
@@ -145,7 +145,7 @@
                         <img 
                             src="./assets/images/pen.svg" 
                             alt="pen"
-                            class="object-conver"
+                            class="pen object-conver"
                         />
                         <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
                         <p>
@@ -156,7 +156,7 @@
                         <img 
                             src="./assets/images/dashboard.svg" 
                             alt="dashboard"
-                            class="object-conver"
+                            class="dashboard object-conver"
                         />
                         <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
                         <p>
@@ -167,7 +167,7 @@
                         <img 
                             src="./assets/images/saved place.svg" 
                             alt="save"
-                            class="object-conver"
+                            class="save object-conver"
                         />
                         <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
                         <p>
@@ -178,7 +178,7 @@
                         <img 
                             src="./assets/images/profile.svg" 
                             alt="profile"
-                            class="object-conver"
+                            class="profile object-conver"
                         />
                         <h3 class="font-bold text-[20px]">رابط کاربری جذاب</h3>
                         <p>
@@ -186,17 +186,10 @@
                         </p>
                     </div>
                 </div>
-                <div class="features-shapes">
-                    <img 
-                        src="./assets/images/Ellipse 132.svg" 
-                        alt="circle" 
-                        class="absolute -right-40 top-10"   
-                    />
-                </div>
             </div>
-            <div class="download relative flex justify-center items-center text-center gap-[42px]">
-                <div class="right-side flex flex-col gap-4">
-                    <div class="right-title">
+            <div class="download flex justify-center items-center text-center gap-[42px]">
+                <div class="right-side flex flex-col items-start gap-4">
+                    <div class="right-title text-start">
                         <p>اپلیکیشن اندروید و IOS</p>
                         <h2>دانلود اپلیکیشن</h2>
                         <img 
@@ -205,7 +198,7 @@
                         class="mobile hidden" 
                         />
                     </div>
-                    <div class="right-content">
+                    <div class="right-content text-start">
                         <p class="max-w-[26rem]">
                             کاربران اندروید می‌توانند اپلیکیشن کوئرالیست را از استورهای معتبر اندروید دانلود نمایند. همچنین کاربران سیستم عامل اپل علاوه بر دانلود نرم‌افزار از اپل‌استور می‌توانند از نسخه مبتنی بر وب آن استفاده نمایند.
                         </p>
@@ -225,15 +218,8 @@
                         class="desktop"
                     />
                 </div>
-                <div class="download-shape">
-                    <img 
-                        src="./assets/images/Ellipse 133.svg" 
-                        alt="circle" 
-                        class="absolute bottom-[75%]"   
-                    />
-                </div>
             </div>
-            <section class="comment-container relative z-20 flex flex-col items-center gap-y-12">
+            <section class="comment-container flex flex-col items-center gap-y-12">
                 <div class="comment-header text-center">
                     <h2>نظرات کاربران</h2>
                     <p class="max-w-md pt-4">
@@ -333,30 +319,18 @@
                     </div>
                 </div>
                 <div class="comment-footer flex gap-x-6">
-                    <div class="right-slider">
+                    <div class="slide right-slider">
                         <img 
                             src="./assets/images/right-slider.svg" 
-                            alt="right-slider" 
+                            alt="right-slider"
                         />
                     </div>
-                    <div class="left-slider">
+                    <div class="slide left-slider">
                         <img 
                             src="./assets/images/left-slider.svg" 
                             alt="left-slider" 
                         />
                     </div>
-                </div>
-                <div class="comment-shape">
-                    <img 
-                        src="./assets/images/Ellipse 131.svg" 
-                        alt="circle" 
-                        class="absolute -left-40 -top-20"   
-                    />
-                    <img 
-                        src="./assets/images/Ellipse 130.svg" 
-                        alt="circle" 
-                        class="absolute -right-[10%] bottom-0"   
-                    />
                 </div>
             </section>
         </main>
