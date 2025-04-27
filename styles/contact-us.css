@@ -9,6 +9,7 @@
     box-shadow: 0 4px 63px 0 #00000008;
     border: 1px solid #F5F6F8;
     border-radius: 24px;
+    transition: all 0.5 ease;
 }
 
 
@@ -21,6 +22,18 @@
     padding: 16px;
     border: 1px solid #E6E6E6;
     border-radius: 6px;
+}
+
+#contact-us-main input.dark, #contact-us-main textarea.dark {
+    border: 1px solid #293242;
+}
+
+#contact-us-main input.dark::placeholder, #contact-us-main textarea.dark::placeholder {
+    color: #6D7581;
+}
+
+#contact-us-main input.dark:focus, #contact-us-main textarea.dark:focus {
+    color: red;
 }
 
 #contact-us-main label {

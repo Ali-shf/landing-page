@@ -10,15 +10,19 @@ hamburgerMenu.addEventListener("click", () => {
 
 const darkModeBtn = document.querySelector("#navbar .dark-mode img");
 const htmlElement = document.getElementById("light");
+// !navbar
 const navbar = document.getElementById("navbar");
 const navbarLinks = document.querySelectorAll("#navbar .right-nav ul li a");
 const navbarLogo = document.querySelector("#navbar .right-nav h5");
+// !header
 const header = document.getElementById("header");
 const headerCircles = document.querySelectorAll("#header .circle");
 const headerStars = document.querySelectorAll("#header .star");
 const headerleftBtn = document.querySelector("#header .header-btn .left-btn");
+// !mian
 const main = document.getElementById("main");
 const mainPicture = document.querySelector("#main .main-picture img");
+// !feature
 const featuresTitleP = document.querySelector(".features .features-title p");
 const featuresItems = document.querySelectorAll(".features .features-items .item");
 const featuresItemsP = document.querySelectorAll(".features .features-items .item p");
@@ -26,9 +30,11 @@ const featuresItemsPen = document.querySelector(".features .features-items .item
 const featuresItemsDashboard = document.querySelector(".features .features-items .item .dashboard");
 const featuresItemsSave = document.querySelector(".features .features-items .item .save");
 const featuresItemsProfile = document.querySelector(".features .features-items .item .profile");
+// !download
 const downloadImg = document.querySelector(".download .left-side img");
 const downloadTitleP = document.querySelector(".download .right-side .right-title p");
 const downlaodContentP = document.querySelectorAll(".download .right-content p");
+// !comment
 const commentHeaderP = document.querySelector(".comment-container .comment-header p");
 const commentCards = document.querySelectorAll("#main .comment-container .comment-cards .card");
 const commentCardTitleDesc = document.querySelectorAll("#main .comment-container .card-title .card-title-desc p");
@@ -36,7 +42,12 @@ const commentCardContentP = document.querySelectorAll("#main .comment-container 
 const commentFooterRightSlide = document.querySelector("#main .comment-container .comment-footer .right-slider img");
 const commentFooterLeftSlide = document.querySelector("#main .comment-container .comment-footer .left-slider img");
 const commentFooterSlides = document.querySelectorAll("#main .comment-container .comment-footer .slide");
+// !footer
 const footer = document.querySelector("#footer");
+const footerFax = document.querySelector("#footer .FAQ img");
+const footerCall = document.querySelector("#footer .call img");
+const footerLocation = document.querySelector("#footer .location img");
+const footerEndP = document.querySelector("#footer .footer-end p");
 const theme = document.querySelector(":root");
 darkModeBtn.addEventListener("click", () => {
     header.classList.toggle("dark");
@@ -80,6 +91,11 @@ darkModeBtn.addEventListener("click", () => {
         commentFooterSlides.forEach(slide => slide.classList.add("dark"));
         commentFooterRightSlide.src = "./assets/images/dark-mode/right-slide.svg";
         commentFooterLeftSlide.src = "./assets/images/dark-mode/left-slide.svg";
+        // !footer
+        footerFax.src = "./assets/images/dark-mode/fax.svg";
+        footerCall.src = "./assets/images/dark-mode/call.svg";
+        footerLocation.src = "./assets/images/dark-mode/location.svg";
+        footerEndP.style.color = "#DFDFDF";
     } else {
         htmlElement.id = "light";
         darkModeBtn.classList.remove("dark");
@@ -117,5 +133,10 @@ darkModeBtn.addEventListener("click", () => {
         commentFooterSlides.forEach(slide => slide.classList.remove("dark"));
         commentFooterRightSlide.src = "./assets/images/right-slider.svg";
         commentFooterLeftSlide.src = "./assets/images/left-slider.svg";
+         // !footer
+        footerFax.src = "./assets/images/bag.svg";
+        footerCall.src = "./assets/images/call.svg";
+        footerLocation.src = "./assets/images/location.svg";
+        footerEndP.style.color = "#666666";
     }
 })

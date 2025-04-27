@@ -413,9 +413,6 @@ html#dark {
         font-size: 12px;
         color: #141414;
     }
-    #main .features .features-shapes {
-        display: none;
-    }
     #main .features-items {
         height: 328px;
         grid-template-columns: repeat(2, 140px);
@@ -437,9 +434,6 @@ html#dark {
         line-height: 16px;
     }
     /* main-download */
-    #main .download-shape {
-        display: none;
-    }
     #main .download {
         gap: 0;
     }
@@ -447,6 +441,7 @@ html#dark {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
     #main .download .right-side .right-title p {
         font-size: 12px;
@@ -491,9 +486,6 @@ html#dark {
         display: none;
     }
     #main .comment-container .comment-cards .middle-cards :first-child.card {
-        display: none;
-    }
-    #main .comment-container .comment-shape {
         display: none;
     }
     /* !footer */
